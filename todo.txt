@@ -1,0 +1,11 @@
+convert one kml point to the proper lat long data structure
+
+loop through and put all into that data structure
+
+have a sketch that gets the first point and measures the distance and outputs distance
+
+do the stuff that figures out top 2 and outputs those in console
+
+hook up lcd and do that part
+
+
