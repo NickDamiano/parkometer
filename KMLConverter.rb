@@ -3,6 +3,10 @@ require 'pry-byebug'
 
 arduino_array = []
 
+# Opens kml file, removes namespaces, extracts placemarks which is the area
+	# that holds the POI info, iterates through to create proper arduino data structure
+	# of nested arrays
+
 doc = File.open("POIs.kml") { |f| Nokogiri::XML(f)}
 doc.remove_namespaces!
 placemarks = doc.xpath("//Folder/Placemark")
@@ -13,7 +17,7 @@ placemarks.each do | placemark |
 	arr = [name, lat, lon]
 	arduino_array.push(arr)
 end
-binding.pry
+
 
 # const double EIFFEL_TOWER_LAT = 36.96070;
 # const double EIFFEL_TOWER_LNG = 127.05692;
