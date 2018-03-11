@@ -18,6 +18,16 @@ placemarks.each do | placemark |
 	arduino_array.push(arr)
 end
 
+output = File.open("points.txt", "w") do | line | 
+	line.puts "string pointsMatrix[3][" + arduino_array.length.to_s + "] = {"
+	arduino_array.each do | point | 
+		line.puts "{" + point[0] + "," + point[1] + "," + point[2] + "}"
+		if arduino_array[-1] != point
+			line.puts ","
+		end
+	end
+	line.puts "};"
+end
 
 # const double EIFFEL_TOWER_LAT = 36.96070;
 # const double EIFFEL_TOWER_LNG = 127.05692;

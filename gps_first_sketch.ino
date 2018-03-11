@@ -8,6 +8,7 @@ TinyGPSLocation loc;
 const double EIFFEL_TOWER_LAT = 36.96070;
 const double EIFFEL_TOWER_LNG = 127.05692;
 
+
 void setup()
 {
   Serial.begin(9600);//This opens up communications to the Serial monitor in the Arduino IDE
@@ -23,7 +24,7 @@ void loop()
   }
   if(gps.location.isUpdated())//This will pretty much be fired all the time anyway but will at least reduce it to only after a package of NMEA data comes in
   {
-    //Get the latest info from the gps object which it derived from the data sent by the GPS unit
+    //Serial Print Satellite info
     Serial.println("Satellite Count:");
     Serial.println(gps.satellites.value());
     Serial.println("Latitude:");
@@ -35,7 +36,9 @@ void loop()
     Serial.println("Altitude Feet:");
     Serial.println(gps.altitude.feet());
     Serial.println("");
-    double distanceKm =
+
+    //
+    double distance =
       gps.distanceBetween(
         gps.location.lat(),
         gps.location.lng(),
@@ -48,7 +51,7 @@ void loop()
           EIFFEL_TOWER_LAT,
           EIFFEL_TOWER_LNG);
     Serial.print("Distance (km) to Eiffel Tower: ");
-    Serial.println(distanceKm);
+    Serial.println(distance);
     Serial.print("Course to Eiffel Tower: ");
     Serial.println(courseTo);
     Serial.print("Human directions: ");

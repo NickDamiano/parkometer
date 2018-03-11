@@ -25,4 +25,19 @@ do the stuff that figures out top 2 and outputs those in console
 
 hook up lcd and do that part
 
+Once the code is all done and working, add the File contents to the ruby script and have it build the entire file into a full arduino sketch. 
+
+probably don't need tests
+
+Create tutorial showing the code and the arduino wiring
+
+Add the button to turn on power. 9v battery hook up to arduino plug. use a battery charger for cell phone right now
+
+build the case.
+
+Make a final video showing 1 minute explanation. do it showing a good example of parking. 
+
+Add a label with parkometer 2000 like dad would
+
+try to finish the mvc by Sunday night and make the video
 
