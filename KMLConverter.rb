@@ -18,15 +18,19 @@ placemarks.each do | placemark |
 	arduino_array.push(arr)
 end
 
+number_of_points = arduino_array.length
+
 output = File.open("points.txt", "w") do | line | 
-	line.puts "string pointsMatrix[3][" + arduino_array.length.to_s + "] = {"
+	line.puts "Poi poi_list[" + arduino_array.length.to_s + "] = {"
 	arduino_array.each do | point | 
-		line.puts "{" + point[0] + "," + point[1] + "," + point[2] + "}"
+		line.puts "{" + "\""  + point[0].rstrip + "\"" + "," +  point[1].strip + "," + point[2].strip + "}"
 		if arduino_array[-1] != point
 			line.puts ","
 		end
 	end
 	line.puts "};"
+	number_of_points = arduino_array.length
+	line.puts "int number_of_points = " + number_of_points.to_s + ";"
 end
 
 # const double EIFFEL_TOWER_LAT = 36.96070;
