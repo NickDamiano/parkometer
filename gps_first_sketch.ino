@@ -4,12 +4,19 @@
 SoftwareSerial serial_connection(10, 11); //RX=pin 10, TX=pin 11
 TinyGPSPlus gps;//This is the GPS object that will pretty much do all the grunt work with the NMEA data
 TinyGPSLocation loc;
+void output_to_lcd();
 
 struct Poi {
-  char name[30];
+  char place_name[30];
   double lat;
   double lng;
 };
+
+char first_name[30];
+char second_name[30];
+long first_distance = 100000;
+long second_distance = 111111;
+
 
 Poi poi_list[13] = {
 {"AK Plaza W",36.9905263,127.0847449}
@@ -41,53 +48,47 @@ Poi poi_list[13] = {
 int number_of_points = 13;
 
 float calculate_distance(Poi point){
-  float distance = gps.distanceBetween(
+  long distance = gps.distanceBetween(
     gps.location.lat(),
     gps.location.lng(),
     point.lat,
     point.lng);
-    Serial.println("");
-    Serial.print("lat is ");
-    Serial.print(point.lat, 7);
-    Serial.println("");
-    Serial.print("longitutde is ");
-    Serial.print(point.lng, 7);
-    Serial.print("DISTANCE DISTANCE DISTANCE KM:");
-    Serial.println(distance /1000);
-    Serial.println("");
     return distance;
+}
+
+void output_to_lcd(char frst_name[30], long frst_distance,char scond_name[30],  long scond_distance){
+  Serial.println("LCD stuff here");
+  Serial.print(frst_name);
+  Serial.println(frst_distance);
+  Serial.print(scond_name);
+  Serial.println(scond_distance);
+  Serial.println("END OF LCD STUFF");
 }
 
 void setup()
 {
   Serial.begin(9600);//This opens up communications to the Serial monitor in the Arduino IDE
   serial_connection.begin(9600);//This opens up communications to the GPS
-  Serial.println("GPS Start");//Just show to the monitor that the sketch has started 
-
 }
 
 void loop()
-{
+{ 
   while(serial_connection.available())
   {
     gps.encode(serial_connection.read());
   }
-  if(gps.location.isUpdated())
-    //Serial Print Satellite info
-    Serial.println("SATELLITE INFO FOR MY POSITION START");
-    Serial.println("Satellite Count:");
-    Serial.println(gps.satellites.value());
-    Serial.println("Latitude:");
-    Serial.println(gps.location.lat(), 6);
-    Serial.println("Longitude:");
-    Serial.println(gps.location.lng(), 6);
-    Serial.println("SATELLITE INFO FOR MY POSITION END");
-    Serial.println("");
-
+  if(gps.location.isUpdated()){
+  
     for(int i=0;i<number_of_points;i++){
-        Serial.print("Name: ");
-        Serial.println(poi_list[i].name);
-        Serial.print("Distance: ");
-        Serial.println(calculate_distance(poi_list[i]));
+        int distance = calculate_distance(poi_list[i]);
+        if(distance < first_distance){
+          strcpy(first_name, poi_list[i].place_name);
+          first_distance = distance;
+        } else if (distance < second_distance){
+          strcpy(second_name, poi_list[i].place_name);
+          second_distance = distance;
+        }
+        output_to_lcd(first_name, first_distance, second_name, second_distance);
     }
+  }
 }
