@@ -12,7 +12,7 @@ doc.remove_namespaces!
 placemarks = doc.xpath("//Folder/Placemark")
 placemarks.each do | placemark |
 	name = placemark.search("name").text
-	lat = placemarks[0].search('coordinates').text.split("\n")[1].split(',')[1]
+	lat = placemark.search('coordinates').text.split("\n")[1].split(',')[1]
 	lon = placemark.search('coordinates').text.split("\n")[1].split(',').first.lstrip!
 	arr = [name, lat, lon]
 	arduino_array.push(arr)
