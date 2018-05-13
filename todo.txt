@@ -1,13 +1,5 @@
 
-1) Output into a file with just the data structure exactly how it will be declared in arduino.
-
-2) Copy that into sketch at tome
-
-3) Write loop that iterates through each nested array and calculates distance
-
-4) Output distance in console
-
-5) Create the top two method to extract top two closest and write those out
+5) Create the top two method to extract top two closest and write those out. (FIX - duplicate values like usual)
 
 6) Add LCD part to output and keep in mind you can only have x number of characters minus distance. Handle edge case that the nearest point is a large distance and it takes up the lcd screen. maybe create a conditional so if it's larger than 999 meters it switches measurement to km. 
 

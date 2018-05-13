@@ -3,7 +3,7 @@ require 'pry-byebug'
 
 arduino_array = []
 
-# Opens kml file, removes namespaces, extracts placemarks which is the area
+# Opens POIs.kml file in this directory, removes namespaces, extracts placemarks which is the area
 	# that holds the POI info, iterates through to create proper arduino data structure
 	# of nested arrays
 
