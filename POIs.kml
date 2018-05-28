@@ -353,6 +353,33 @@
           </coordinates>
         </Point>
       </Placemark>
+      <Placemark>
+        <name>Bop Joa</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6048297,32.9685094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ranger Stadi</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -97.0836282,32.7502775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Madera</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -120.0607176,36.9613356,0
+          </coordinates>
+        </Point>
+      </Placemark>
     </Folder>
   </Document>
 </kml>

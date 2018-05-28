@@ -1,4 +1,4 @@
-Poi poi_list[34] = {
+Poi poi_list[37] = {
 {"Target E.",32.965764,-96.6460794}
 ,
 {"Target W.",32.9652453,-96.646699}
@@ -66,5 +66,11 @@ Poi poi_list[34] = {
 {"W Home Depot",32.946375,-96.6159314}
 ,
 {"Best Buy",32.9456626,-96.6140002}
+,
+{"Bop Joa",32.9685094,-96.6048297}
+,
+{"Ranger Stadi",32.7502775,-97.0836282}
+,
+{"Madera",36.9613356,-120.0607176}
 };
-int number_of_points = 34;
+int number_of_points = 37;

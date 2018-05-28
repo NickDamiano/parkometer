@@ -15,7 +15,7 @@ LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 // Declare an array of mixed types of char(string) and double(number) - used when looping through comparing distances
 struct Poi {
-  char place_name[30];
+  char place_name[14];
   double lat;
   double lng;
 };
@@ -28,7 +28,7 @@ long first_distance = 100000;
 long second_distance = 111111;
 
 // Define our array of locations and names
-const Poi poi_list[34] = {
+Poi poi_list[37] = {
 {"Target E.",32.965764,-96.6460794}
 ,
 {"Target W.",32.9652453,-96.646699}
@@ -96,8 +96,20 @@ const Poi poi_list[34] = {
 {"W Home Depot",32.946375,-96.6159314}
 ,
 {"Best Buy",32.9456626,-96.6140002}
+,
+{"Bop Joa",32.9685094,-96.6048297}
+,
+{"Ranger Stadi",32.7502775,-97.0836282}
+,
+{"Madera",36.9613356,-120.0607176}
 };
-int number_of_points = 34;
+int number_of_points = 37;
+
+
+
+
+
+
 
 
 // Takes that mixed array struct and calculates the distance to the given point from our location
@@ -150,7 +162,7 @@ void loop()
         // compare first position name with current position being iterated name,
           // Used later to prevent first position from taking up first and second position
         bool same_name = strcmp(first_name, poi_list[i].place_name) ;
-        int distance = calculate_distance(poi_list[i]);
+        long distance = calculate_distance(poi_list[i]);
         if(distance < first_distance){
           strcpy(first_name, poi_list[i].place_name);
           first_distance = distance;
