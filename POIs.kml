@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>Parking Lot POIs</name>
+    <name>Dallas POIs</name>
     <description/>
     <Style id="icon-1899-0288D1-nodesc-normal">
       <IconStyle>
@@ -10,7 +10,7 @@
         <Icon>
           <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
         </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>0</scale>
@@ -26,7 +26,7 @@
         <Icon>
           <href>http://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
         </Icon>
-        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
       </IconStyle>
       <LabelStyle>
         <scale>1</scale>
@@ -48,119 +48,101 @@
     <Folder>
       <name>Untitled layer</name>
       <Placemark>
-        <name>AK Plaza W</name>
+        <name>TGT E Entrance</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0847449,36.9905263,0
+            -96.6460794,32.965764,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>AK Plaza East</name>
+        <name>TGT W. Entrance</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0861048,36.9914775,0
+            -96.646699,32.9652453,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Ramen Place</name>
+        <name>Office Depot</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0895004,36.9923795,0
+            -96.6471899,32.9648976,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>BX Center</name>
+        <name>Michaels</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0339894,37.0833073,0
+            -96.645606,32.9661522,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>BX West</name>
+        <name>Petsmart</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0350462,37.083288,0
+            -96.6453928,32.9663851,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Osan Chilis</name>
+        <name>Cheddars</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0365375,37.0834186,0
+            -96.6444272,32.9662152,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Work Main Gate</name>
+        <name>Chicfila W</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0219141,36.9643656,0
+            -96.6440074,32.9658597,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Commissary</name>
+        <name>Chicfila E</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0024359,36.9639905,0
+            -96.6438411,32.9658473,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>PX Food Court</name>
+        <name>Walmart Garden</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0002204,36.9647878,0
+            -96.642327,32.9633077,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>PX Main entrance</name>
+        <name>Walmart Main</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            126.9993058,36.9650471,0
+            -96.642842,32.9629038,0
           </coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>One Stop</name>
+        <name>Walmart Food</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            127.0221126,36.9484856,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>AMC</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            127.0425832,36.9578653,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Braii Republic</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            127.0446378,36.9599206,0
+            -96.6433865,32.9624649,0
           </coordinates>
         </Point>
       </Placemark>

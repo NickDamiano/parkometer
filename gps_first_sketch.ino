@@ -1,9 +1,13 @@
+#include <LiquidCrystal.h>
 #include "TinyGPS++.h"
 #include "SoftwareSerial.h"
 
-SoftwareSerial serial_connection(10, 11); //RX=pin 10, TX=pin 11
+SoftwareSerial serial_connection(8, 9); //RX=pin 8, TX=pin 9
 TinyGPSPlus gps;//This is the GPS object that will pretty much do all the grunt work with the NMEA data
 TinyGPSLocation loc;
+const int rs = 11, en = 12, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
+LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+
 void output_to_lcd();
 
 struct Poi {
@@ -18,34 +22,31 @@ long first_distance = 100000;
 long second_distance = 111111;
 
 
-Poi poi_list[13] = {
-{"AK Plaza W",36.9905263,127.0847449}
+Poi poi_list[11] = {
+{"TGT E Entrance",32.965764,-96.6460794}
 ,
-{"AK Plaza East",36.9914775,127.0861048}
+{"TGT W. Entrance",32.9652453,-96.646699}
 ,
-{"Ramen Place",36.9923795,127.0895004}
+{"Office Depot",32.9648976,-96.6471899}
 ,
-{"BX Center",37.0833073,127.0339894}
+{"Michaels",32.9661522,-96.645606}
 ,
-{"BX West",37.083288,127.0350462}
+{"Petsmart",32.9663851,-96.6453928}
 ,
-{"Osan Chilis",37.0834186,127.0365375}
+{"Cheddars",32.9662152,-96.6444272}
 ,
-{"Work Main Gate",36.9643656,127.0219141}
+{"Chicfila W",32.9658597,-96.6440074}
 ,
-{"Commissary",36.9639905,127.0024359}
+{"Chicfila E",32.9658473,-96.6438411}
 ,
-{"PX Food Court",36.9647878,127.0002204}
+{"Walmart Garden",32.9633077,-96.642327}
 ,
-{"PX Main entrance",36.9650471,126.9993058}
+{"Walmart Main",32.9629038,-96.642842}
 ,
-{"One Stop",36.9484856,127.0221126}
-,
-{"AMC",36.9578653,127.0425832}
-,
-{"Braii Republic",36.9599206,127.0446378}
+{"Walmart Food",32.9624649,-96.6433865}
 };
-int number_of_points = 13;
+int number_of_points = 11;
+
 
 float calculate_distance(Poi point){
   long distance = gps.distanceBetween(
@@ -69,6 +70,10 @@ void setup()
 {
   Serial.begin(9600);//This opens up communications to the Serial monitor in the Arduino IDE
   serial_connection.begin(9600);//This opens up communications to the GPS
+  Serial.print("beginning");
+  lcd.begin(16, 2);
+  lcd.clear();
+  lcd.print("hello world");
 }
 
 void loop()
