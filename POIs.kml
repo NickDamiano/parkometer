@@ -48,7 +48,7 @@
     <Folder>
       <name>Untitled layer</name>
       <Placemark>
-        <name>TGT E Entrance</name>
+        <name>Target E.</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -57,7 +57,7 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>TGT W. Entrance</name>
+        <name>Target W.</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
@@ -143,6 +143,213 @@
         <Point>
           <coordinates>
             -96.6433865,32.9624649,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Academy</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6467446,32.9592816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Excel North</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.7066517,32.9617054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kroger North</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6642554,32.977509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kroger South</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6642755,32.9770995,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Texas Roadhouse</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.636627,32.963124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Fry's]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.7045033,33.0068033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Costco</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6997021,33.0444814,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red Lobster</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.7015958,33.0444972,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Movies AMC</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6139224,32.9505165,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[B & N South]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.613453,32.9532781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[B&N North]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6130802,32.9537913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Macy's N]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6094002,32.9524206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Macy's W]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6098562,32.9523171,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Macy's SW]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6097704,32.9519119,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Macy's SE]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6092205,32.9516644,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Macy's E]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6087833,32.9517949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Old Navy</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6123775,32.9524994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Panera W</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6168943,32.9539106,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Panera E</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6167387,32.953861,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[In N' Out]]></name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6174079,32.9540388,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>E Home Depot</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6152769,32.9462332,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>W Home Depot</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6159314,32.946375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Best Buy</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6140002,32.9456626,0
           </coordinates>
         </Point>
       </Placemark>

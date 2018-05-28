@@ -1,25 +1,7 @@
 
-5) Create the top two method to extract top two closest and write those out. (FIX - duplicate values like usual)
-
-6) Add LCD part to output and keep in mind you can only have x number of characters minus distance. Handle edge case that the nearest point is a large distance and it takes up the lcd screen. maybe create a conditional so if it's larger than 999 meters it switches measurement to km. 
-
-so 356m and 1.3km 99.9km 
-
-Max number would be 7 including the space after. which LCD is 16 across so i guess i designated 7 spaces regardless that only leaves me with 9 for the detail... i guess i could reduce that so if it's above 9999 meters  it doesn't display. 
-
-so 9999m means 6 including space which means 10 name spaces. maybe add a warning listing names that are larger than 10 characters like 
-******Warning******
-
-
-have a sketch that gets the first point and measures the distance and outputs distance
-
-do the stuff that figures out top 2 and outputs those in console
-
-hook up lcd and do that part
 
 Once the code is all done and working, add the File contents to the ruby script and have it build the entire file into a full arduino sketch. 
 
-probably don't need tests
 
 Create tutorial showing the code and the arduino wiring
 
@@ -31,5 +13,4 @@ Make a final video showing 1 minute explanation. do it showing a good example of
 
 Add a label with parkometer 2000 like dad would
 
-try to finish the mvc by Sunday night and make the video
 
