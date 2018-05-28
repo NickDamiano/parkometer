@@ -32,31 +32,3 @@ output = File.open("points.txt", "w") do | line |
 	number_of_points = arduino_array.length
 	line.puts "int number_of_points = " + number_of_points.to_s + ";"
 end
-
-# const double EIFFEL_TOWER_LAT = 36.96070;
-# const double EIFFEL_TOWER_LNG = 127.05692;
-
-# open the file. iterate through the points
-# for each point, copy latitude into a variable, copy longitude into variable
-# copy name into a variable. push those into a hash and that hash into an 
-#array
-# so [{name: px main, latitude: 123, longitude:345},{},]
-
-#after i have the data structure, then iterate through it and create the necessary
-#variables
-
-# array string eifel[Eiffel_Tower_LAT, EIFFEL_TOWER_LNG, Eiffel_NAME]
-# Example - 
-
-# int pinMatrix[3][3] = {
- 
-#   {2,  3,  4  },
- 
-#   {5,  6,  7  },
- 
-#   {8,  9, 10  }
- 
-# };
-
-# so, iterate through, get the name, lat, long, store them into an array and push 
-# it 
