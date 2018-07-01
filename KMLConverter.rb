@@ -1,5 +1,4 @@
 require 'nokogiri'
-require 'pry-byebug'
 
 arduino_array = []
 
@@ -12,6 +11,14 @@ doc.remove_namespaces!
 placemarks = doc.xpath("//Folder/Placemark")
 placemarks.each do | placemark |
 	name = placemark.search("name").text
+	# This sets fixed length to 13 so LCD on arduino fills up the right space
+	size = name.length
+	if name.length < 13 
+		diff = 13 - size
+		name +=  " " * diff
+	elsif size > 13
+		name = name[0..12]
+	end
 	lat = placemark.search('coordinates').text.split("\n")[1].split(',')[1]
 	lon = placemark.search('coordinates').text.split("\n")[1].split(',').first.lstrip!
 	arr = [name, lat, lon]
@@ -23,7 +30,7 @@ number_of_points = arduino_array.length
 output = File.open("points.txt", "w") do | line | 
 	line.puts "Poi poi_list[" + arduino_array.length.to_s + "] = {"
 	arduino_array.each do | point | 
-		line.puts "{" + "\""  + point[0].rstrip + "\"" + "," +  point[1].strip + "," + point[2].strip + "}"
+		line.puts "{" + "\""  + point[0] + "\"" + "," +  point[1].strip + "," + point[2].strip + "}"
 		if arduino_array[-1] != point
 			line.puts ","
 		end

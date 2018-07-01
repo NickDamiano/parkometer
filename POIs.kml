@@ -372,11 +372,20 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>Madera</name>
+        <name>Loser Pool</name>
         <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
         <Point>
           <coordinates>
-            -120.0607176,36.9613356,0
+            -96.5535352,32.9861544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>pool</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -96.6515243,32.9623074,0
           </coordinates>
         </Point>
       </Placemark>
