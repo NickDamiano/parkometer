@@ -173,6 +173,13 @@ void output_to_lcd(){
   lcd.print(second_result);
 }
 
+void update_distance_lcd(){
+  lcd.setCursor(13, 0);
+  lcd.print(first_result);
+  lcd.setCursor(13, 1);
+  lcd.print(second_result);
+}
+
 // Our initial code that runs upon starting
 void setup()
 {
@@ -206,10 +213,15 @@ void loop()
           strcpy(first_name, poi_list[i].place_name);
           first_distance = distance;
           first_result = convert_distance(first_distance);
-        } if (distance < second_distance && distance > first_distance && same_name){
+        }else if (distance < second_distance && distance > first_distance && same_name){
           strcpy(second_name, poi_list[i].place_name);
           second_distance = distance;
           second_result = convert_distance(distance);
+        }else{
+          // Just update the distances 
+          first_result = convert_distance(first_distance);
+          second_result = convert_distance(distance);
+          update_distance_lcd();
         }
         output_to_lcd();
     }
