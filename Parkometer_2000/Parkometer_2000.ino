@@ -32,6 +32,8 @@ long first_distance = 100000;
 long second_distance = 111111;
 String first_result;
 String second_result;
+int first_name_index;
+int second_name_index;
 
 // Define our array of locations and names
 Poi poi_list[38] = {
@@ -211,16 +213,21 @@ void loop()
         long distance = calculate_distance(poi_list[i]);
         if(distance < first_distance){
           strcpy(first_name, poi_list[i].place_name);
+          first_name_index = i;
           first_distance = distance;
           first_result = convert_distance(first_distance);
         }else if (distance < second_distance && distance > first_distance && same_name){
           strcpy(second_name, poi_list[i].place_name);
+          second_name_index = i;
           second_distance = distance;
-          second_result = convert_distance(distance);
+          second_result = convert_distance(second_distance);
         }else{
           // Just update the distances 
+    
+          first_distance = calculate_distance(poi_list[first_name_index]);
           first_result = convert_distance(first_distance);
-          second_result = convert_distance(distance);
+          second_distance = calculate_distance(poi_list[second_name_index]);
+          second_result = convert_distance(second_distance);
           update_distance_lcd();
         }
         output_to_lcd();
